@@ -3,20 +3,56 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cover Snap</title>
+<title>Sunset Cover Studio — GTA-style cover art maker</title>
+<link rel="icon" href="data:,">
 <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <main class="app">
   <section class="controls">
-    <h1>Cover Snap</h1>
-    <p>A photo and a caption, made into a square cover.</p>
-    <label>Photo <input id="photo" type="file" accept="image/*"></label>
-    <label>Caption <input id="caption" type="text" maxlength="40" value="Sunset Heist"></label>
-    <button id="export" type="button">Export PNG 1080 x 1080</button>
-    <p id="status" role="status"></p>
+    <h1>Sunset Cover Studio</h1>
+    <p class="tag">Your photo, a caption, and a sunset — made into poster cover art.</p>
+
+    <fieldset>
+      <legend>Layout</legend>
+      <div class="choices" id="layout-choices"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Colour grade</legend>
+      <div class="choices" id="grade-choices"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Export size</legend>
+      <div class="choices" id="size-choices"></div>
+    </fieldset>
+
+    <label>Title
+      <input id="title" type="text" maxlength="40" value="Sunset Heist">
+    </label>
+    <label>Subtitle
+      <input id="subtitle" type="text" maxlength="60" value="Palm Shores · 2026">
+    </label>
+    <div class="row">
+      <button id="title-top" type="button" class="mini-btn">Title on top</button>
+      <button id="title-bottom" type="button" class="mini-btn">Title at bottom</button>
+    </div>
+
+    <button id="fill-all" type="button" class="mini-btn">Fill all panels with Panel 1</button>
+
+    <div class="panels" id="panels"></div>
+
+    <button id="export" type="button" class="export-btn">Export PNG</button>
+    <p id="status" role="status">Drag a photo on the cover to crop it. Scroll over it to zoom.</p>
+    <p class="fine">Photos stay on your machine — nothing is uploaded. Sample photos are
+    original images made for this app and free to use. Fonts: Anton and Oswald,
+    SIL Open Font License, shipped under app/fonts/.</p>
   </section>
-  <canvas id="cover" width="1080" height="1080" aria-label="The cover"></canvas>
+
+  <section class="preview">
+    <canvas id="cover" width="1080" height="1080" aria-label="The cover preview"></canvas>
+  </section>
 </main>
 <script type="module" src="./src/main.js"></script>
 </body>

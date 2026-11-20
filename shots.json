@@ -1,5 +1,1 @@
-[
-  { "name": "1-cover.jpg", "query": "?shot=cover&photo=pier&caption=Sunset%20Heist", "w": 1080, "h": 1080 },
-  { "name": "2-editor.jpg", "query": "?shot=editor&photo=boulevard&caption=Boulevard%20Queen", "w": 1280, "h": 720 },
-  { "name": "3-cover.jpg", "query": "?shot=cover&photo=boulevard&caption=Boulevard%20Queen", "w": 1080, "h": 1080 }
-]
+[{"h":1080,"name":"1-cover.jpg","query":"?shot=cover&layout=trio&grade=sunset&size=1080x1080&photos=rider,neon,pier&caption=SUNSET%20HEIST&subtitle=PALM%20SHORES%20%C2%B7%202026","w":1080},{"h":720,"name":"2-editor.jpg","query":"?shot=editor&layout=trio&grade=sunset&size=1080x1080&photos=rider,neon,pier&caption=SUNSET%20HEIST&subtitle=PALM%20SHORES%20%C2%B7%202026","w":1280},{"h":1280,"name":"3-cover.jpg","query":"?shot=cover&layout=hero&grade=neon&size=1080x1350&photos=neon&caption=NEON%20NIGHTS&subtitle=PALM%20SHORES%20%C2%B7%202026","w":1024},{"h":720,"name":"4-cover-wide.jpg","query":"?shot=cover&layout=duo&grade=gold&size=1920x1080&photos=rider,pier&caption=GOLDEN%20COAST&subtitle=PALM%20SHORES%20%C2%B7%202026","w":1280}]
